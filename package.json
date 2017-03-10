@@ -1,0 +1,19 @@
+{
+  "name": "nyt_reactapp_redo",
+  "version": "1.0.0",
+  "description": "MERN stack utilizing NYT api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pnickolas1/nyt_reactapp_redo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pnickolas1/nyt_reactapp_redo/issues"
+  },
+  "homepage": "https://github.com/Pnickolas1/nyt_reactapp_redo#readme"
+}
