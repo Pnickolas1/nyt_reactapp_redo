@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
-
-var article = require('./../models/articles.js')
+var articles = require('./../models/articles.js')
 
 //get the route that will be getting all the articles from the database
 router.get('/api/saved', function (req,res) {

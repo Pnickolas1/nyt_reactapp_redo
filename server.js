@@ -37,7 +37,7 @@ app.use(express.static(__dirname + '/public/assets'));
 
 // gets the api routes from the controller.js file and sets
 // the middleware
-var routes = require("./controllers/controllers.js");
+var routes = require("./controllers/controller.js");
 app.use('/', routes);
 
 // starts listening to an environment port or the local specified

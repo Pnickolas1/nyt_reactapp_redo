@@ -47,34 +47,34 @@ var Form = React.createClass({
         });
      },
      render: function () {
-         return (
-             <div className="row">
-                 <div className="col-sm-12">
-                     <div className="panel panel-info">
-                         <div className="panel-heading">Search</div>
-                         <div className="panel-body">
-                             <form onSubmit={this.handleSubmit}>
-                                 <div className="form-group">
-                                     <label htmlFor="start-year">Topic: </label>
-                                     <input value={this.state.topicSearched} onChange={this.handleStartChange} required className="form-control" id="topic" placeholder="Keyword" />
+        return (
+            <div className="row">
+                <div className="col-sm-12">
+                    <div className="panel panel-info">
+                        <div className="panel-heading">Search</div>
+                        <div className="panel-body">
+                            <form onSubmit={this.handleSubmit}>
+                                <div className="form-group">
+                                    <label htmlFor="topic">Topic:</label>
+                                    <input value={this.state.topicSearched} onChange={this.handleTopicChange} required type="text" className="form-control" id="topic" placeholder="Keyword" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="start-year">Start Year: </label>
+                                    <label htmlFor="start-year">Start Year:</label>
                                     <input value={this.state.startYear} onChange={this.handleStartChange} required type="date" data-date-format="YYYY-MM-DD" className="form-control" id="start-year" />
-                                </div> 
+                                </div>
                                 <div className="form-group">
                                     <label htmlFor="end-year">End Year:</label>
-                                    <input value={ths.state.endYear} onChange={this.handleEndChange} required type="date" data-date-format="YYYY-MM-DD" className="form-control" id="end-year" />
-                                </div> 
+                                    <input value={this.state.endYear} onChange={this.handleEndChange} required type="date" data-date-format="YYYY-MM-DD" className="form-control" id="end-year" />
+                                </div>
                                 <button id="submit" type="submit" className="btn btn-default">Submit</button>
                             </form>
-                        </div> 
+                        </div>
                     </div>
                 </div>
-            </div> )
-     }
-
+            </div>)
+    }
 });
+
 
 // make this module accessible to other folders 
 module.exports = Form;
