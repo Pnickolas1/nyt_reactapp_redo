@@ -16,9 +16,9 @@ router.get('/api/saved', function (req,res) {
 // POST route that will post a new document to the database
 router.post('/api/saved', function (req, res) {
     var newArticle = new articles({
-        title: req.body.title,
-        date: req.date.title,
-        url: req.url.url
+        title: req.body.abstract,
+        date: req.body.pub_date,
+        url: req.body.web_url
     });
 
     //then you have to tell your app to save it to the DB
